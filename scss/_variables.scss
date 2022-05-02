@@ -57,9 +57,9 @@ $header: #252525;
 }
 
 //МЕДИА-ЗАПРОСЫ
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     .header__container {
-        min-width: 90%;
+        width: 90%;
     }
 }
 
