@@ -69,6 +69,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   background: #1e1e1e;
+  overflow: hidden;
 }
 body header,
 html header {
