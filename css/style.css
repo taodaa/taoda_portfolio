@@ -39,6 +39,11 @@
     opacity: 0;
   }
 }
+@media (min-width: 600px) {
+  .header__container {
+    min-width: 90%;
+  }
+}
 a {
   text-decoration: none;
   color: #dfdfdf !important;
