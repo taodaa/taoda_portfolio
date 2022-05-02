@@ -1,0 +1,100 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: $bg;
+
+    //ШАПКА 
+    header {
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid $pln;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+
+        .header {
+            height: 60px;
+            justify-content: center;
+            display: flex;
+            border-bottom: 1px solid $pln;
+            display: flex;
+            background: $header;
+
+            &__container {
+                display: flex;
+                min-width: 60%;
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .header__box {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    &__logo {
+                        width: 52px;
+                        height: 52px;
+                        fill: $wh;
+                    }
+
+                    &__line {
+                        height: 20px;
+                        margin-left: 10px;
+                        animation-name: blink;
+                        animation-iteration-count: infinite;
+                        animation-duration: 1s;
+                        border-right: 1px solid $wh;
+                    }
+
+                    &__github {
+                        fill: $wh;
+                        margin-left: 10px;
+                    }
+                }
+
+                .header__auth {
+                    display: flex;
+                    color: $wh;
+                    font-size: 15px;
+                    font-family: "FuturaPT-Light";
+                    font-weight: lighter;
+                }
+            }
+
+            &__login {
+                margin-left: 10px;
+            }
+
+            &__login:hover,
+            &__register:hover {
+                color: white;
+                border-bottom: 1px solid white;
+                margin-bottom: -1px;
+            }
+        }
+
+        nav {
+            height: 40px;
+            display: flex;
+            border-bottom: 1px solid $pln;
+        }
+    }
+
+    //КОНТЕНТ
+    .main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background: $bg;
+    }
+}

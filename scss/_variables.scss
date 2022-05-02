@@ -1,0 +1,63 @@
+$bg:#1e1e1e;
+$wh:rgb(223, 223, 223) !important;
+$pln:rgb(58, 52, 52);
+$header: #252525;
+
+
+//ШРИФТЫ
+@font-face {
+    font-family: "FuturaPT-Light";
+    font-style: normal;
+    font-weight: lighter;
+    font-display: block;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("FuturaPT"),
+        /* Если не получилось, загрузит woff2 */
+        url("../fonts/FuturaPT-Light.woff2") format("woff2"),
+        /* Если браузер не поддерживает woff2, загрузит woff */
+        // url("/fonts/roboto.woff") format("woff");
+}
+
+@font-face {
+    font-family: "FuturaPT-medium";
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("FuturaPT"),
+        /* Если не получилось, загрузит woff2 */
+        url("../fonts/FuturaPT-Medium.woff2") format("woff2"),
+        /* Если браузер не поддерживает woff2, загрузит woff */
+        // url("/fonts/roboto.woff") format("woff");
+}
+
+@font-face {
+    font-family: "FuturaPT-bold";
+    font-style: normal;
+    font-weight: bold;
+    font-display: block;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("FuturaPT"),
+        /* Если не получилось, загрузит woff2 */
+        url("../fonts/FuturaPT-Bold.woff2") format("woff2"),
+        /* Если браузер не поддерживает woff2, загрузит woff */
+        // url("/fonts/roboto.woff") format("woff");
+}
+
+//АНИМАЦИИ
+
+@keyframes blink {
+    from {
+        opacity: 1.0;
+    }
+
+    to {
+        opacity: 0.0;
+    }
+}
+
+//СТАНДАРТНЫЕ СТИЛИ
+a {
+    text-decoration: none;
+    color: $wh;
+}

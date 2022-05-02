@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "FuturaPT-Light";
+  font-style: normal;
+  font-weight: lighter;
+  font-display: block;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("FuturaPT"), url("../fonts/FuturaPT-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "FuturaPT-medium";
+  font-style: normal;
+  font-weight: normal;
+  font-display: block;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("FuturaPT"), url("../fonts/FuturaPT-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "FuturaPT-bold";
+  font-style: normal;
+  font-weight: bold;
+  font-display: block;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("FuturaPT"), url("../fonts/FuturaPT-Bold.woff2") format("woff2");
+}
+@-webkit-keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+a {
+  text-decoration: none;
+  color: #dfdfdf !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #1e1e1e;
+}
+body header {
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #3a3434;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+}
+body header .header {
+  height: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #3a3434;
+  display: flex;
+  background: #252525;
+}
+body header .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 60%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body header .header__container .header__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body header .header__container .header__box__logo {
+  width: 52px;
+  height: 52px;
+  fill: #dfdfdf !important;
+}
+body header .header__container .header__box__line {
+  height: 20px;
+  margin-left: 10px;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  border-right: 1px solid #dfdfdf !important;
+}
+body header .header__container .header__box__github {
+  fill: #dfdfdf !important;
+  margin-left: 10px;
+}
+body header .header__container .header__auth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #dfdfdf !important;
+  font-size: 15px;
+  font-family: "FuturaPT-Light";
+  font-weight: lighter;
+}
+body header .header__login {
+  margin-left: 10px;
+}
+body header .header__login:hover, body header .header__register:hover {
+  color: white;
+  border-bottom: 1px solid white;
+  margin-bottom: -1px;
+}
+body header nav {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #3a3434;
+}
+body .main {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #1e1e1e;
+}

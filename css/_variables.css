@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "FuturaPT-Light";
+  font-style: normal;
+  font-weight: lighter;
+  font-display: block;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("FuturaPT"), url("../fonts/FuturaPT-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "FuturaPT-medium";
+  font-style: normal;
+  font-weight: normal;
+  font-display: block;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("FuturaPT"), url("../fonts/FuturaPT-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "FuturaPT-bold";
+  font-style: normal;
+  font-weight: bold;
+  font-display: block;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("FuturaPT"), url("../fonts/FuturaPT-Bold.woff2") format("woff2");
+}
+@-webkit-keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+a {
+  text-decoration: none;
+  color: #dfdfdf !important;
+}
