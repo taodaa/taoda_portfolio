@@ -2,7 +2,7 @@ $bg:#1e1e1e;
 $wh:rgb(223, 223, 223) !important;
 $pln:rgb(58, 52, 52);
 $header: #252525;
-
+$main:#efefef0f !important;
 
 //ШРИФТЫ
 @font-face {
@@ -60,6 +60,12 @@ $header: #252525;
 @media (max-width: 600px) {
     .header__container {
         width: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main__container {
+        width: 100%;
     }
 }
 
