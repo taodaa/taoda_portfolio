@@ -61,15 +61,17 @@ a {
           box-sizing: border-box;
 }
 
-body {
+body,
+html {
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background: #1e1e1e;
 }
-body header {
+body header,
+html header {
   width: 100%;
   height: 100%;
   border-bottom: 1px solid #3a3434;
@@ -82,7 +84,8 @@ body header {
           flex-direction: column;
   position: fixed;
 }
-body header .header {
+body header .header,
+html header .header {
   height: 60px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -94,7 +97,8 @@ body header .header {
   display: flex;
   background: #252525;
 }
-body header .header__container {
+body header .header__container,
+html header .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,7 +114,8 @@ body header .header__container {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-body header .header__container .header__box {
+body header .header__container .header__box,
+html header .header__container .header__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,12 +127,14 @@ body header .header__container .header__box {
       -ms-flex-align: center;
           align-items: center;
 }
-body header .header__container .header__box__logo {
+body header .header__container .header__box__logo,
+html header .header__container .header__box__logo {
   width: 52px;
   height: 52px;
   fill: #dfdfdf !important;
 }
-body header .header__container .header__box__line {
+body header .header__container .header__box__line,
+html header .header__container .header__box__line {
   height: 20px;
   margin-left: 10px;
   -webkit-animation-name: blink;
@@ -138,11 +145,13 @@ body header .header__container .header__box__line {
           animation-duration: 1s;
   border-right: 1px solid #dfdfdf !important;
 }
-body header .header__container .header__box__github {
+body header .header__container .header__box__github,
+html header .header__container .header__box__github {
   fill: #dfdfdf !important;
   margin-left: 10px;
 }
-body header .header__container .header__auth {
+body header .header__container .header__auth,
+html header .header__container .header__auth {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,15 +160,19 @@ body header .header__container .header__auth {
   font-family: "FuturaPT-Light";
   font-weight: lighter;
 }
-body header .header__login {
+body header .header__login,
+html header .header__login {
   margin-left: 10px;
 }
-body header .header__login:hover, body header .header__register:hover {
+body header .header__login:hover, body header .header__register:hover,
+html header .header__login:hover,
+html header .header__register:hover {
   color: white;
   border-bottom: 1px solid white;
   margin-bottom: -1px;
 }
-body header nav {
+body header nav,
+html header nav {
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,7 +182,8 @@ body header nav {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
-body .main {
+body .main,
+html .main {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -180,12 +194,13 @@ body .main {
       -ms-flex-pack: center;
           justify-content: center;
 }
-body .main__container {
+body .main__container,
+html .main__container {
   min-width: 60%;
   height: 100%;
-  margin-top: 100px;
 }
-body .main__container__box {
+body .main__container__box,
+html .main__container__box {
   width: 100%;
   height: 400px;
   background: #efefef0f !important;
