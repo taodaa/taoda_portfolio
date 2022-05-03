@@ -39,6 +39,22 @@
     opacity: 0;
   }
 }
+@-webkit-keyframes twiling {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes twiling {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media (max-width: 600px) {
   .header__container {
     width: 90%;

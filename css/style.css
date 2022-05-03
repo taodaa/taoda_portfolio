@@ -39,6 +39,22 @@
     opacity: 0;
   }
 }
+@-webkit-keyframes twiling {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes twiling {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media (max-width: 600px) {
   .header__container {
     width: 90%;
@@ -241,10 +257,4 @@ html .main__container__box .slider__slide {
   right: 0;
   background: url("/images/boolean1.svg") no-repeat;
   background-size: contain;
-  -webkit-animation-name: blinker;
-          animation-name: blinker;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: inherit;
-          animation-iteration-count: inherit;
 }
