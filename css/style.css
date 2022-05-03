@@ -208,6 +208,6 @@ body .main__container__box,
 html .main__container__box {
   width: 100%;
   height: 400px;
-  background: url("/images/boolean1.svg") no-repeat;
+  background: url("../images/boolean1.svg") no-repeat;
   background-size: contain;
 }
