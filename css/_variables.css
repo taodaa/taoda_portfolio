@@ -43,16 +43,9 @@
   .header__container {
     width: 90%;
   }
-}
-@media (max-width: 600px) {
+
   .main__container {
-    width: 100%;
-  }
-}
-@media (min-width: 1050px) {
-  .main__container__box {
-    -webkit-box-shadow: 0px -300px 41px -40px #1e1e1e inset;
-    box-shadow: 0px -300px 41px -40px #1e1e1e inset !important;
+    width: 90% !important;
   }
 }
 a {
