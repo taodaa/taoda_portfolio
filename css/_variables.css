@@ -24,18 +24,18 @@
   src: local("FuturaPT"), url("../fonts/FuturaPT-Bold.woff2") format("woff2");
 }
 @-webkit-keyframes blink {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
+  100% {
     opacity: 0;
   }
 }
 @keyframes blink {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
+  100% {
     opacity: 0;
   }
 }

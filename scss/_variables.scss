@@ -48,14 +48,15 @@ $nav: #25252573;
 //АНИМАЦИИ
 
 @keyframes blink {
-    from {
+    0% {
         opacity: 1.0;
     }
 
-    to {
+    100% {
         opacity: 0.0;
     }
 }
+
 
 //МЕДИА-ЗАПРОСЫ
 @media (max-width: 600px) {

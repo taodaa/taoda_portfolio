@@ -137,8 +137,11 @@ html {
                         transition: all ease 1s;
                         left: 0;
                         right: 0;
-                        background: url('../images/boolean1.svg') no-repeat;
+                        background: url('/images/boolean1.svg') no-repeat;
                         background-size: contain;
+                        animation-name: blinker;
+                        animation-duration: 1s;
+                        animation-iteration-count: inherit;
                     }
                 }
             }

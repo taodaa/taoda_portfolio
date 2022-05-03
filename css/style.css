@@ -24,18 +24,18 @@
   src: local("FuturaPT"), url("../fonts/FuturaPT-Bold.woff2") format("woff2");
 }
 @-webkit-keyframes blink {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
+  100% {
     opacity: 0;
   }
 }
 @keyframes blink {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
+  100% {
     opacity: 0;
   }
 }
@@ -239,6 +239,12 @@ html .main__container__box .slider__slide {
   transition: all ease 1s;
   left: 0;
   right: 0;
-  background: url("../images/boolean1.svg") no-repeat;
+  background: url("/images/boolean1.svg") no-repeat;
   background-size: contain;
+  -webkit-animation-name: blinker;
+          animation-name: blinker;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: inherit;
+          animation-iteration-count: inherit;
 }

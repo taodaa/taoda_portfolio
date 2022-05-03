@@ -25,14 +25,6 @@ function draw() {
         step++
     }
     offset = 1;
-    // function opacity() {
-    //     if (div.style.top === 512 + 'px') {
-    //         div.style.animation = 'blink';
-    //     }
-    //     else if (div.style.top == 0 + 'px') {
-    //         div.style.animation = 'none';
-    //     }
-    // }
 
 }
 function left() {
@@ -43,6 +35,7 @@ function left() {
         slides2[i].style.top = offset2 * 512 - 512 + 'px';
         offset2++;
     }
+
     setTimeout(() => {
         slides2[0].remove();
         console.log(slides2);
@@ -52,4 +45,5 @@ function left() {
 }
 
 draw(); draw();
+
 document.onclick = left;
