@@ -220,7 +220,7 @@ html .main__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url("/images/background.png") no-repeat;
+  background: url("../images/background.png") no-repeat;
   background-size: contain;
 }
 body .main__container__box,
@@ -255,6 +255,6 @@ html .main__container__box .slider__slide {
   transition: all ease 1s;
   left: 0;
   right: 0;
-  background: url("/images/boolean1.svg") no-repeat;
+  background: url("../images/boolean1.svg") no-repeat;
   background-size: contain;
 }
