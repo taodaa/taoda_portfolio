@@ -112,6 +112,7 @@ html {
             margin-top: 100px;
             display: flex;
             background: url('/images/background.png') no-repeat;
+            background-size: contain;
 
             &__box {
                 width: 100%;

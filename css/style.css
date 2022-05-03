@@ -205,6 +205,7 @@ html .main__container {
   display: -ms-flexbox;
   display: flex;
   background: url("/images/background.png") no-repeat;
+  background-size: contain;
 }
 body .main__container__box,
 html .main__container__box {
